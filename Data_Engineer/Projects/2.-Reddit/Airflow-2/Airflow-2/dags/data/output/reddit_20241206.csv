@@ -1,0 +1,287 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1h8epkx,Gartner Magic Quadrant,What do you guys think about this?,72,102,Electrical-Grade2960,2024-12-06 23:20:05,https://i.redd.it/ubf466keab5e1.jpeg,False,False,False,False
+1h827zc,Opinion: Low code/no code tools is a way to control DS teams despite sacrificing productivity,"I'm finding that in most orgs, management is using no code/low code tools to justify adding non-technical people to teams that need to be 100% technical.
+
+opinion open for discussion.",44,47,Material-Tank3040,2024-12-06 14:12:10,https://www.reddit.com/r/dataengineering/comments/1h827zc/opinion_low_codeno_code_tools_is_a_way_to_control/,False,False,False,False
+1h86ebo,Data Modeler vs Data Engineer vs Data Architect,"I’m currently a data analyst who primarily does end-to-end dashboard development. I truly enjoying writing/optimizing SQL queries and creating data tables to better organize our team’s data. I’ve been recognized for my ability to organize data in very digestible and efficient ways (whether in a dashboard, report, or simple data pull). I want to grow in my career but am not sure where to go exactly. What are the differences between a Data Modeler, Data Engineer, and Data Architect? 
+
+I’d like to have more say in what tables are needed for our team, how tables should be structured and used, data cleanliness, etc. Is this more of a Data Specialist?
+
+I initially thought this was Data Engineering and asked our Data Engineer what advice he had for someone trying to break into the field. I thought they were going to say learn cloud-based technologies, but instead said learn CLI first. Would you guys agree?
+
+",31,17,GoGetThatBag,2024-12-06 17:15:56,https://www.reddit.com/r/dataengineering/comments/1h86ebo/data_modeler_vs_data_engineer_vs_data_architect/,False,False,False,False
+1h7xz8p,Forgetting everything ,"Hello everyone, 
+
+I've worked in companies that uses different tools and due to changing the tools and the company several times and working with a lot of tools i started to forget everything i know for example I'm good in python but due to not using it lately i forgot it but time by time i have a python task so i go and read about python again from scratch then start that task. 
+Same goes for cloud I'm certified from azure a year ago but all the year after that i was using aws so i forgot almost all the names in azure but i remember that there is a tool doing this and this but i don't remember any name. 
+
+The question is, anyone suffering that memory issues too? ",27,12,Mountain-Luck7673,2024-12-06 09:55:06,https://www.reddit.com/r/dataengineering/comments/1h7xz8p/forgetting_everything/,False,False,False,False
+1h832c0,Is there a tool that enables you to write data pipeline code in a DAG-like fashion?,"When writing code for data workflows - which in my case is mostly in Python - I like to follow this approach of grouping related transformations together in *nodes*, and then *connecting them* so that they form an imaginary DAG (e.g. computing a monthly average is one processing node in this DAG). It's not a specific library or anything, it's just the way I like to think about this process of writing data flows.
+
+I usually start preparing that code with notebooks or IPython, and then port it to an actual .py file. But I realized that, when I'm writing this in a notebook, there are cases where I feel like I'd want to ""branch out"" into multiple processing paths. Each branch would get a separate copy of the initial dataset, process it independently, and then potentially merge back into a final output.
+
+A trivial example: I have a time series of daily price data, and I want to add a field that has the last month's closing price (for each day). I could:
+
+* Branch out to create the monthly aggregation
+* Merge back in the ""main branch"" and outer join with the daily 
+
+(Obviously this is very simple to implement, but there are more complex situations.)
+
+**My Question**: Has anyone found a natural way to implement this kind of DAG-like notebook approach to their dev workflow? Or am I the crazy one for thinking this would be useful?",17,18,Western_Necessary_58,2024-12-06 14:52:13,https://www.reddit.com/r/dataengineering/comments/1h832c0/is_there_a_tool_that_enables_you_to_write_data/,False,False,False,False
+1h8is7j,Re: About the psycopg2 name,,19,0,mjgcfb,2024-12-07 02:47:03,https://www.postgresql.org/message-id/flat/CA%2BRjkXFL6Jy7actUy%2BS%3DdGfjpuD_jpUYYofGpON%2B1Nq9S2Y75w%40mail.gmail.com#f9771ec89bf350e0594cf9640a1f912c,False,False,False,False
+1h7wgqf,DBT for transformation and CI/CD,"My company is planning to bring DBT for transformation and CI/CD in Snowflake.
+
+Currently, We are transforming data with views and materialized them into table using task.
+For deployment, we use snowflake connector.
+
+Our data size size is mid and 1-2 gbs  per months increment there.So, I m thinking DBT will be overkill and we can manage things will python libs.
+
+Is DBT going to good here or is there any alternative will be better like Snowflake notebook?
+",15,3,Practical_Manner69,2024-12-06 08:00:20,https://www.reddit.com/r/dataengineering/comments/1h7wgqf/dbt_for_transformation_and_cicd/,False,False,False,False
+1h81drm,Recommendations on Advanced Data Modeling course / source of information,"Hello,
+
+I am a backend and embedded systems developer for a couple of years now. Recently I started on a company that is doing some high tech stuff, they basically needs me to remake an entire embedded system software and their data structure from ground up, because the way it was modeled is not scalable, today this product (the embedded one) deals with huge amounts of data, because they have very specific sensors that collects datas for machine learning. My task will be to remake all of that, and for that I need re-model the entire data system, so any recommendations, suggestions on courses, books and even articles on this topic would be nice. I will focus on RDBMS.
+
+Thanks.",10,2,victorreisdev,2024-12-06 13:30:29,https://www.reddit.com/r/dataengineering/comments/1h81drm/recommendations_on_advanced_data_modeling_course/,False,False,False,False
+1h7yvjl,Doing MS AI without prior CS/Maths. This sub is convincing me to shift to Data Engineering ,"I don't care about my salary being a little higher if I'm a Machine Learning Engineer. I care more about stability and less competition.
+
+I did Bachelors in Business and by some luck and passing entry tests, got into top CS school of the country. 
+
+As you might expect, having no prior maths, programming experience, the 1st semester has been pretty wild for me
+
+Help me curate my elective courses for shifting towards Data Engineering
+
+First semester courses:
+
+Core course- Mathematical Foundations of AI
+(reviews linear algebra, calculus, optimization, probability)
+
+Core course - Introduction to AI (Almost all basic level machine Learning has been taught along with some deep learning)
+
+Second semester courses:
+
+Core course - Machine Learning (Actually is a deep learning course)
+
+Elective: Data Engineering for AI.
+
+The second semester is yet to start. After these 3 courses we're allowed to choose from the attached list of electives. As you can see there are no proper Data Engineering electives. But uni does offer following electives to bachelors students:
+
+Databases
+Distributed Systems
+Network Centric Computing
+Cloud Computing
+
+I'm going to request the Head of Department to allow these electives for MS AI program as well. Just wanna confirm if these are the right choices for Data Engineering. If there's any other bachelor's course I should look for, please tell me what could be its name ",10,7,Glittering_Usual_7,2024-12-06 11:00:11,https://i.redd.it/33q5zu3em75e1.jpeg,False,False,False,False
+1h8dq29,What is the difference between the new AWS S3 Tables and their other tabular resources like Redshift?,"I am not well-versed in cloud computing, so this new feature confuses me. AFAIK S3 Buckets essentially functioned as an unstructured data lake. The description of S3 Tables sounds to be just more in-line with regular databases or data warehouses.",10,2,avaqueue,2024-12-06 22:34:18,https://www.reddit.com/r/dataengineering/comments/1h8dq29/what_is_the_difference_between_the_new_aws_s3/,False,False,False,False
+1h8eyhl,Where Can I Find Open-Source Datasets with Complex Data Models?,"I'm building a tool to understand the underlying data models in data warehouses and generate documentation for data models along with their metadata. The idea is to create a tool that can plug into messy data systems and provide an overview of their structure.
+
+**My question is:** Do you know of any open-source datasets with complex and large numbers of tables and columns?
+
+I would really appreciate your recommendations. Thank you for your help!",9,4,SnooCooler,2024-12-06 23:32:09,https://www.reddit.com/r/dataengineering/comments/1h8eyhl/where_can_i_find_opensource_datasets_with_complex/,False,False,False,False
+1h87u7p,Which field has the highest demand in freelancing,"Hello friends,
+
+I am a Node.js backend developer with 2 years of experience. I want to start freelancing, but I have no idea how to begin. Based on a friend's suggestion, I created an account on Fiverr and made a simple gig.
+
+My question is: which field has the highest demand in freelancing? I mean fields like frontend, backend development, WordPress, DevOps, data pipelines, data engineering, etc. I want to learn as many skills as possible so that I can set up my own business and avoid working as an employee for a company.
+
+Over the past few months, I have met many people and attended several events, some of which were not even related to my field. For example, I gave a data engineering inter iew where I built an ETL data pipeline using Node.js, Python, Docker, Apache Kafka, and Postgres. I also interacted with companies that develop gambling websites, games, and even crack software to steal user data or bypass paid APIs for WhatsApp and Meta applications.
+
+After working for 2 years, I have realized that most IT companies have middlemen who take a significant cut of the revenue, leaving employees with very little. I want to do something of my own.
+
+I have a few friends who are frontend developers, full-stack developers, and UI/UX designers.
+
+If you have any advice, please share it with me. I’d like to know what strategies I should use, which platforms I should focus on, etc.
+
+I am not interested in frontend development, and I’m not good at designing UIs. I prefer backend development and want to explore more opportunities in server-side technologies. Should I explore fields like DevOps or data engineering?
+
+Thank you.
+
+",9,4,Leading_Painting,2024-12-06 18:16:34,https://www.reddit.com/r/dataengineering/comments/1h87u7p/which_field_has_the_highest_demand_in_freelancing/,False,False,False,False
+1h84hoy,"Looking for cloud storage platform for publicly sharing large data (Parquet, JSON) without egress fees....","I am a biomedical researcher with an interest in public data integration and reuse. As part of our research efforts, we'd like to share about 200GB of data in parquet/jsonlines format and to do so somewhere without egress fees (for obvious reasons). I've attempted to use R2, have tried putting some data on Huggingface datasets (since the data are ripe for NLP), and looked into NIH-funded generalist repositories. For R2, I have not found the right combo of Cloudflare technologies to make the Parquet files cloud-readable by things like Duckdb. Huggingface datasets appears to be the closest fit for now and does work, but I'm a little concerned about sustainability. Generalist repositories like Zenodo are not large enough and lack ability to update data regularly (daily). 
+
+Any suggestions? ",5,6,Snoo-56267,2024-12-06 15:55:10,https://www.reddit.com/r/dataengineering/comments/1h84hoy/looking_for_cloud_storage_platform_for_publicly/,False,False,False,False
+1h7z3sr,Local Development and Testing for Glue ETL,"Hi everyone, I am quite new to the data engineering field and am trying to do a little data lake project on AWS using glue as a tool for data catalog and ETL. I am wondering what tools are people using for developing and testing Glue ETLs in actually workplaces. Glue studio? Docker Image? Btw, I am using windows and could run spark locally on WSL. But it doesn’t seem to integrate well with Jupyter notebook and VSCode.
+
+Many thanks in advance.",6,1,X2005573053,2024-12-06 11:15:19,https://www.reddit.com/r/dataengineering/comments/1h7z3sr/local_development_and_testing_for_glue_etl/,False,False,False,False
+1h7vqvs,How to setup my ELT,"Hey, I am working for a company where I onboard many performance data and enrich it with company data.
+
+Currently I have some problems, like using performance data as calculation base for new company data, or other way around. 
+Cleaning performance data, business logics on performance data changes over time and I need to reprocess everything..
+
+The company data can change any day what would might be connected to a performance day 2 years in the past.
+So I have a single huge table at the end what gets created each day and joins all my company data to the performance, also currently has better performance than letting each user access the data over a view where the joins gets calculated per request. 
+
+I am already following the best practices, like avoiding select *, partitions, …
+
+But this setup makes it very inflexible to react fast on changes, costs are huge for reprocessing and so on..
+
+Runs in BigQuery.
+",7,5,Curious_Reputation_9,2024-12-06 07:07:47,https://www.reddit.com/r/dataengineering/comments/1h7vqvs/how_to_setup_my_elt/,False,False,False,False
+1h8hde0,Can I Build A PC to Act as A Spark Compute Cluster?,"Looking into the idea of doing some personal projects and just general learning.
+
+I use spark frequently at work, but don’t have the knowledge I would like to.
+
+Is it possible to build a PC that would be solely used for setting up and acting as a Spark compute cluster?
+
+If so, I couldn’t find any good articles online in doing so. Does anyone have resources they have found over time?",7,7,Famous_Bee_3361,2024-12-07 01:32:01,https://www.reddit.com/r/dataengineering/comments/1h8hde0/can_i_build_a_pc_to_act_as_a_spark_compute_cluster/,False,False,False,False
+1h80qkr,Does it still consider to be a personal DE project without Extraction and Loading?,"Hello guys, so the question is my title.
+
+The reason i asked this is because for my next personal project, I just wanna use DBT to transform the data from the sample datasets in Google BigQuery for honing my SQL skills, testing around with my transformation skills and also just to get used to DBT. Eventually, i wanna make it as a personal project to add to my portfolio but is this project consider to be DE eventhough it only involves in Transformation?",7,4,Old-Advice8306,2024-12-06 12:56:33,https://www.reddit.com/r/dataengineering/comments/1h80qkr/does_it_still_consider_to_be_a_personal_de/,False,False,False,False
+1h7v92z,On-Premise LLMOps Platform: A Guide for 2025,,6,0,codingdecently,2024-12-06 06:34:45,https://overcast.blog/on-premise-llmops-platform-a-guide-for-2025-726162b04cab,False,False,False,False
+1h7xjc2,sentence_tranformer over 100+ Millions Rows,"Hey everyone,
+
+I'm working on a pipeline to encode over **100 million rows** into embeddings using **SentenceTransformers**, **PySpark**, and **Pandas UDF** on **Dataproc Serverless**.
+
+Currently, it takes several hours to process everything. I only have one column containing sentences, each under 30 characters long. These are encoded into **64-dimensional vectors** using a custom model in a Docker image.
+
+At the moment, the job has been running for over **12 hours** with **57 executors** (each with **24GB of memory and 4 cores**). I’ve partitioned the data into **2000 partitions**, hoping to speed up the process, but it's still slow.
+
+Here’s the core part of my code:
+
+    F.pandas_udf(returnType=ArrayType(FloatType()))
+    def encode_pd(x: pd.Series) -> pd.Series:
+        try:
+            model = load_model()
+            return pd.Series(model.encode(x, batch_size=512).tolist())
+        except Exception as e:
+            logger.error(f""Error in encode_pd function: {str(e)}"")
+            raise
+
+The `load_model` function is as follows:
+
+    def load_model() -> SentenceTransformer:
+        model = SentenceTransformer(
+            ""custom_model"", 
+            device=""cpu"", 
+            cache_folder=os.environ['SENTENCE_TRANSFORMERS_HOME'], 
+            truncate_dim=64
+        )
+        return model
+
+I tried broadcasting the model, but I couldn't refer to it inside the Pandas UDF.
+
+Does anyone have suggestions to optimize this? Perhaps ways to load the model more efficiently, reduce execution time, or better utilize resources?",5,7,nidalap24,2024-12-06 09:21:08,https://www.reddit.com/r/dataengineering/comments/1h7xjc2/sentence_tranformer_over_100_millions_rows/,False,False,False,False
+1h8hoz6,How to Lead a DE group?,"I'm preparing for a role where I'd be Director of Data Engineering. I've led AI and ML groups, but never really involved in DE that much, other than just making sure that people stayed on schedule.
+
+What would you recommend a new leader do for the group? I'm not asking about qualities, rather I'm interested in day-to-day tasks that I can do to help the team get more done.",3,6,PeterGibb832,2024-12-07 01:48:55,https://www.reddit.com/r/dataengineering/comments/1h8hoz6/how_to_lead_a_de_group/,False,False,False,False
+1h88p3e,SQL or Graph database for both real time and data analytics use case,"Hi,
+
+I have a dataset which consists of company information(considering there will be max 100K companies). And employees belonging to each company and different type of documents belonging to each employee and company which are XMLs which contains repetitive items(list of 100+ items) with numerical values(each item has 20+ attributes) and dates.
+
+The requirement is to store the 2 years historic data and perform operations on the data present in documents, like aggregation of numerical values present within the same document(not aggregation across documents )based on various conditions, based on dates present in the document etc, and latest 5 aggregated values based on dates for each employee needs to be shown in frontend. And whenever a new document is submitted the data in that document will be aggregated and that will be shown in latest 5 in near realtime. The raw data will also be directly used for analytics/ML etc.  
+
+I have started storing this data in MySQL, where company info is stored in one table, employees in other table and data in XML in  another table where each list item in XML is stored as a row in the table. And there are FK between the tables based on company and employee ID. For aggregation I will be writing a Java application (no idea if anything else can be used here) and store aggregated data in another table.
+
+But since the data of company/employees are completely disjoint from other companies/employees. Is it a better option to store this as disjoint neo4j graph and have relation between company->employee->document->document_rows and have another label :Latest while inserting new document to indicate that its latest document so that it can be easily fetched for aggregation for a particular company/employee and then aggregated data can be associated back as  nodes with another relation in same graph. Also will it be a problem if there are too many properties (20+) for a single node in neo4j? Is neo4j suitable for near realtime data access?",3,1,vmanel96,2024-12-06 18:53:19,https://www.reddit.com/r/dataengineering/comments/1h88p3e/sql_or_graph_database_for_both_real_time_and_data/,False,False,False,False
+1h8e8ol,Using Views for data agility at Twitch,"I recently published [an article on Twitch's Engineer Blog](https://blog.twitch.tv/en/2024/12/05/views-pwn-tables-as-data-interfaces/) about how my team is using Views with our Data Lake as quick, two-way doors to minimize data downtime, empower developer workflows, quickly adapt to new challenges, and reduce costs.",2,3,Proof-Ad6915,2024-12-06 22:58:28,https://www.reddit.com/r/dataengineering/comments/1h8e8ol/using_views_for_data_agility_at_twitch/,False,False,False,False
+1h8hy9n,Implementing Write Audit Publish with dbt and databricks,"Hi everyone,
+
+We're experiencing issues with our daily dbt builds(incremental) on Databricks, where test failures can lead to incorrect data being made available to users until the issue is fixed and rerun. To address this, I'm interested in implementing WAP (Write, Audit, Publish) techniques. I'd love to hear from anyone who has successfully implemented WAP with dbt and Databricks.
+
+Specifically, I'm looking for advice on how to use WAP to ensure that our users always have access to the most recent valid data, even if the latest build fails.
+
+There is a long discussion on dbt github [https://github.com/dbt-labs/dbt-core/discussions/5687](https://github.com/dbt-labs/dbt-core/discussions/5687) on this topic and some ideas on using snowflake zero clone and I am thinking the same can be implemented using the Databricks shallow clones.
+
+Thanks in advance for your insights and experiences!",1,0,mrcool444,2024-12-07 02:02:05,https://www.reddit.com/r/dataengineering/comments/1h8hy9n/implementing_write_audit_publish_with_dbt_and/,False,False,False,False
+1h8fur7,Where to find Demo Databases ?,"Hey guys,
+I’m onto a project that includes AI and Databases and I need to test a bunch of demo databases in various languages like MSSQL, MySQL, PostGres etc.
+However preferably the databases shouldn’t be too well known to avoid the AI already knowing the DB.
+
+But at the moment I only have Northwind and Chinook. So whatever you guys know I’m open to hear.
+
+I’m looking at 3, 4 DB/ language",1,0,ApioxFR,2024-12-07 00:16:06,https://www.reddit.com/r/dataengineering/comments/1h8fur7/where_to_find_demo_databases/,False,False,False,False
+1h8eabd,Azure Data Sharing for Azure synapse (DW),"What kind of Data sharing is supported on Azure Synapse (DW). Their documentation is very confusing. Azure Data share has support for snapshot (full snapshot vs incremental snapshot) data sharing and in-place data sharing.
+
+Context: I am a data provider, and I want to share some data with my consumers. My consumers could be using different data warehouse (Snowflake, Azure synapse, databricks, etc)
+
+Snowflake secure data sharing is amazing. Clear separation of storage and compute (through virtual DW)
+
+Note: I am not looking to share data cross DW (meaning synapse to snowflake). It will be Azure synapse to Azure synapse.
+
+Anyone using Azure Synapse (DW) or Microsoft personnel who can answer this?",1,0,leonardo_demon,2024-12-06 23:00:27,https://www.reddit.com/r/dataengineering/comments/1h8eabd/azure_data_sharing_for_azure_synapse_dw/,False,False,False,False
+1h8azdc,How to search for compaines in Europe,"Hello, I’m a Junior Data Engineer working at a consulting company in Spain. My role involves managing and modeling the distribution side of Inditex's database, leveraging Snowflake and other well-known technologies. It’s a great job where I’m learning a lot and gaining valuable experience.
+
+I’m also pursuing a Master’s degree in Big Data Science. While I enjoy working in Spain, I can’t help but notice the significant difference in salaries compared to other EU countries for similar roles. This has made me consider exploring opportunities with foreign companies, either working remotely from Spain or relocating if the offer is attractive enough.
+
+I already have a LinkedIn profile and a CV, but I’d like advice on how to take a more proactive approach to connect with companies abroad. Additionally, I’m curious about which companies or sectors are worth focusing on to advance my career. Any guidance on this would be greatly appreciated.",1,2,jecaman,2024-12-06 20:31:52,https://www.reddit.com/r/dataengineering/comments/1h8azdc/how_to_search_for_compaines_in_europe/,False,False,False,False
+1h88rkc,Iceberg Tables/Snowflake Combining Schemas,"Hi We are using fivetran but have multiple sources with the same schemas effectively single tenanted. We want to move to using S3 Iceberg as landing to save on upstream costs and allow more flexibility. 
+
+  
+Currently fivetran only loads to AWS iceberg as seperate sources and schemas. 
+
+E.g Database 1, Schema 1 and Database 2, Schema 1 
+
+We have 1000+ Databases like this but fivetran records them as seperate schemas for each database. Is there away to they can be merged up stream so they are effectively multi-tenanted? Using Iceberg -can use any AWS tools or other means to do this. Thanks!",1,0,MundaneKnowledge5001,2024-12-06 18:56:14,https://www.reddit.com/r/dataengineering/comments/1h88rkc/iceberg_tablessnowflake_combining_schemas/,False,False,False,False
+1h853ku,Short Form Video Data Solutions,"Hi all,
+
+I'm launching a platform that analyzes trend data from short form video platforms. To ingest data / create data sets we currently use a two fold scraping and manual system and then from there are able to use AI to create the insights. We also have some proprietary 1st party data from creators that we're able to leverage. 
+
+All this being said- does anyone know of interesting cases and work arounds of pulling data from short from sites like tiktok, ytshorts, and IG reels. I'm happy with our current infrastructure but figured you all would be the peeps to ask for anything we might have missed! 
+
+  
+Thanks",1,0,BakerTheOptionMaker,2024-12-06 16:21:05,https://www.reddit.com/r/dataengineering/comments/1h853ku/short_form_video_data_solutions/,False,False,False,False
+1h84x1i,Data Vault Integration for Dashboard Data Extraction,"Hello everyone,
+
+I’m working on a **Data Vault** implementation that currently includes **Hubs, Links, and Satellites**, including **multi-active satellites** and **satellite links**. The model is still in the **development phase**, so we’re focusing on relatively simple use cases.
+
+I collaborate with a **Java team** that needs to extract data from the **Raw Vault** to present it on a **dashboard**. The data they require comes from:
+
+* A few **Hubs**
+* Two **Satellites**
+
+I’m relatively new to **Data Vault modeling** and would like some guidance on the best practices for this scenario. Specifically:
+
+1. **Should I create PIT and Bridge tables?**
+
+* While I understand these structures improve query performance and simplify data consumption, I’m wondering if they are necessary at this early stage, given that the data requirements are straightforward.
+
+1. **Would it be acceptable to create a view with joins on the Raw Vault tables?**
+
+* My idea is to define a **view** to join the required Hubs, Links, and Satellites for the requested data. This would keep the logic in the database and provide a single source of truth for the Java team.
+
+1. **Should I implement a Stored Procedure for parameterized data retrieval?**
+
+* I’m considering creating a **Stored Procedure** that accepts parameters (e.g., specific keys or date ranges) and performs the necessary filtering. The Java team could call this procedure to fetch the data dynamically.
+
+Since we’re still building the Data Vault and don’t yet have complex scenarios, I’m looking for recommendations on how to approach this:
+
+* **Is it better to keep things simple with views and procedures for now, or should I start implementing PIT and Bridge tables early?**
+* Are there any other best practices I should consider?
+
+Thank you in advance for your suggestions!",1,2,peixinho3,2024-12-06 16:13:28,https://www.reddit.com/r/dataengineering/comments/1h84x1i/data_vault_integration_for_dashboard_data/,False,False,False,False
+1h83wdi,Strange Question and may not meet sub standards.,"Where can i find all of the icons for creating a data pipeline diagram.  For example, google, microsoft, aws, snowflake, python etc.  Do I have to individually find them or is there one source for the majority to download?",1,1,Impossible-Will6173,2024-12-06 15:29:20,https://www.reddit.com/r/dataengineering/comments/1h83wdi/strange_question_and_may_not_meet_sub_standards/,False,False,False,False
+1h83tr1,Question about setting up new pipeline on AWS,"I'm trying to setup a blueprint for multiple data pipelines and wondering what the best solution is for this. The overal gist for each pipeline is the same, just different data and transformations.
+
+Getting constant uploads of JSON Lines zstd compressed files (50-150MB each at 100-200GB/day) to an S3 bucket. They're partitioned by date but some sources upload data that's 30+ days old. 
+
+On a daily our 12 hour schedule I want to process any new files uploaded. I prefer using Python over SQL here as it requires transforming data multiple levels deep, as well as multiple transformation and storing it into couple of different Iceberg Tables.
+
+Currently testing stuff out with AWS Glue Spark Jobs, but only as a Spark runner. 
+The GlueContext does not work because it doesn't support zstd compression (nor does the Glue Crawler). However SparkContext does when using `org.apache.hadoop.io.compress.ZStandardCodec`.
+
+The question now remains how to get the list of new files? What's the ""best"" way of doing this? Since I can't make use of Job Bookmarks.
+
+I came up with the following:
+
+1. S3 Event Notifications and then a Lambda to store it in DynamoDB (least preferred)
+2. Have CloudTrail log all uploaded files and query that 
+3. Use the new S3 Metadata stuff to query for new files
+4. For backlog, use S3 Inventory
+
+
+With 2 and 3 I will need to store the timestamp of the last run somewhere, what would be the best place for that?
+
+Also, am I even going in the right direction with this? Are there any (preferably open source) projects that can help here?",1,0,Wombarly,2024-12-06 15:26:05,https://www.reddit.com/r/dataengineering/comments/1h83tr1/question_about_setting_up_new_pipeline_on_aws/,False,False,False,False
+1h8456s,OpenAI on Azure,"Is anybody running OpenAI on Azure in a regulated industry, specifically a financial services company?
+
+If so, what considerations were make for things like inferencing where your data could potentially be used to train the model. My understanding is that Microsoft does not provide any protections or is the relationship separate, and Azure is making a call out to OpenAI to call (for example0 GPT 4 o1... any thoughts?",0,2,Affectionate-Sir2689,2024-12-06 15:40:06,https://www.reddit.com/r/dataengineering/comments/1h8456s/openai_on_azure/,False,False,False,False
+1h898un,Agentic RAG with Memory,"Imagine a customer support chatbot for an e-commerce platform that retrieves relevant product details from its knowledge base and performs web searches for additional information. Furthermore, it remembers past conversations to deliver a seamless and personalized experience for returning users.
+
+Here is how it works:
+
+\- Store your own data in the knowledge base—in our case, a Website URL.  
+\- Convert the data into embeddings and save it in the Qdrant Vector Database.  
+\- Use phidata Agentic Workflow to combine Tools, LLM, Memory, and the Knowledge Base.
+
+Code Implementation Video: [https://www.youtube.com/watch?v=CDC3GOuJyZ0](https://www.youtube.com/watch?v=CDC3GOuJyZ0)",0,2,External_Ad_11,2024-12-06 19:16:30,https://www.reddit.com/r/dataengineering/comments/1h898un/agentic_rag_with_memory/,False,False,False,False
+1h89vj1,Is there a python library to easily search a database schema?,"Like you have a given db connection, and it looks up all tables and views you have access to, and searches all table, view, and column names with very simple substring matching. I am *not* talking about searching actual data in rows, just the schema. Does a library/function like this exist?",0,8,ref_acct,2024-12-06 19:43:42,https://www.reddit.com/r/dataengineering/comments/1h89vj1/is_there_a_python_library_to_easily_search_a/,False,False,False,False

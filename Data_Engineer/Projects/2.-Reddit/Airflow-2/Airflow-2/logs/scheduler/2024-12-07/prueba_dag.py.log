@@ -1,0 +1,36 @@
+[2024-12-06T22:23:15.991-0600] {processor.py:186} INFO - Started process (PID=12940) to work on /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:23:15.992-0600] {processor.py:914} INFO - Processing file /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py for tasks to queue
+[2024-12-06T22:23:15.995-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:15.994-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:23:16.014-0600] {processor.py:925} INFO - DAG(s) 'my_new_dag' retrieved from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:23:16.086-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.084-0600] {override.py:1911} INFO - Created Permission View: can edit on DAG:my_new_dag
+[2024-12-06T22:23:16.091-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.091-0600] {override.py:1911} INFO - Created Permission View: can read on DAG:my_new_dag
+[2024-12-06T22:23:16.096-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.096-0600] {override.py:1911} INFO - Created Permission View: can delete on DAG:my_new_dag
+[2024-12-06T22:23:16.103-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.103-0600] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:my_new_dag
+[2024-12-06T22:23:16.107-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.107-0600] {override.py:1911} INFO - Created Permission View: can create on DAG Run:my_new_dag
+[2024-12-06T22:23:16.112-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.112-0600] {override.py:1911} INFO - Created Permission View: can read on DAG Run:my_new_dag
+[2024-12-06T22:23:16.118-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.117-0600] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:my_new_dag
+[2024-12-06T22:23:16.118-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.118-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-06T22:23:16.125-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.125-0600] {dag.py:3262} INFO - Creating ORM DAG for my_new_dag
+[2024-12-06T22:23:16.130-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:16.130-0600] {dag.py:4180} INFO - Setting next_dagrun for my_new_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-12-06T22:23:16.140-0600] {processor.py:208} INFO - Processing /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py took 0.161 seconds
+[2024-12-06T22:23:52.946-0600] {processor.py:186} INFO - Started process (PID=12988) to work on /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:23:52.953-0600] {processor.py:914} INFO - Processing file /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py for tasks to queue
+[2024-12-06T22:23:52.955-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:52.954-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:23:52.962-0600] {processor.py:925} INFO - DAG(s) 'my_new_dag' retrieved from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:23:52.973-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:52.973-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-06T22:23:52.986-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:23:52.986-0600] {dag.py:4180} INFO - Setting next_dagrun for my_new_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-12-06T22:23:52.998-0600] {processor.py:208} INFO - Processing /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py took 0.056 seconds
+[2024-12-06T22:24:48.227-0600] {processor.py:186} INFO - Started process (PID=13064) to work on /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:24:48.234-0600] {processor.py:914} INFO - Processing file /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py for tasks to queue
+[2024-12-06T22:24:48.236-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:24:48.235-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:24:48.255-0600] {processor.py:925} INFO - DAG(s) 'my_new_dag' retrieved from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:24:48.277-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:24:48.276-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-06T22:24:48.289-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:24:48.289-0600] {dag.py:4180} INFO - Setting next_dagrun for my_new_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-12-06T22:24:48.303-0600] {processor.py:208} INFO - Processing /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py took 0.088 seconds
+[2024-12-06T22:25:45.784-0600] {processor.py:186} INFO - Started process (PID=13145) to work on /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:25:45.791-0600] {processor.py:914} INFO - Processing file /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py for tasks to queue
+[2024-12-06T22:25:45.793-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:25:45.792-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:25:45.812-0600] {processor.py:925} INFO - DAG(s) 'my_new_dag' retrieved from /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py
+[2024-12-06T22:25:45.834-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:25:45.834-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-12-06T22:25:45.847-0600] {logging_mixin.py:190} INFO - [2024-12-06T22:25:45.847-0600] {dag.py:4180} INFO - Setting next_dagrun for my_new_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-12-06T22:25:45.860-0600] {processor.py:208} INFO - Processing /home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/prueba_dag.py took 0.088 seconds

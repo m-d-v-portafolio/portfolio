@@ -1,0 +1,113 @@
+[2024-12-06T22:39:52.177-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-12-06T22:39:52.184-0600] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_dag.reddit_extraction scheduled__2024-12-06T00:00:00+00:00 [queued]>
+[2024-12-06T22:39:52.189-0600] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_dag.reddit_extraction scheduled__2024-12-06T00:00:00+00:00 [queued]>
+[2024-12-06T22:39:52.189-0600] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-12-06T22:39:52.201-0600] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): reddit_extraction> on 2024-12-06 00:00:00+00:00
+[2024-12-06T22:39:52.207-0600] {standard_task_runner.py:72} INFO - Started process 15009 to run task
+[2024-12-06T22:39:52.213-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'reddit_dag', 'reddit_extraction', 'scheduled__2024-12-06T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmpugam_own']
+[2024-12-06T22:39:52.214-0600] {standard_task_runner.py:105} INFO - Job 11: Subtask reddit_extraction
+[2024-12-06T22:39:52.250-0600] {task_command.py:467} INFO - Running <TaskInstance: reddit_dag.reddit_extraction scheduled__2024-12-06T00:00:00+00:00 [running]> on host m9dv9
+[2024-12-06T22:39:52.303-0600] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Misael' AIRFLOW_CTX_DAG_ID='reddit_dag' AIRFLOW_CTX_TASK_ID='reddit_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-12-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-06T00:00:00+00:00'
+[2024-12-06T22:39:52.304-0600] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-12-06T22:39:52.305-0600] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-12-06T22:39:52.305-0600] {logging_mixin.py:190} INFO - Current task name:reddit_extraction state:running start_date:2024-12-07 04:39:52.184641+00:00
+[2024-12-06T22:39:52.305-0600] {logging_mixin.py:190} INFO - Dag name:reddit_dag and current dag run status:running
+[2024-12-06T22:39:52.305-0600] {taskinstance.py:731} INFO - ::endgroup::
+[2024-12-06T22:39:52.544-0600] {logging_mixin.py:190} INFO - Connected!
+[2024-12-06T22:39:53.414-0600] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/pipelines/reddit_pipeline.py", line 18, in reddit_pipeline
+    load_data_to_csv(post_df, file_path)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/etls/reddit_etl.py", line 45, in load_data_to_csv
+    data.to_csv(path, index=False)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'DAGS/dags/data/output'
+[2024-12-06T22:39:53.425-0600] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-12-06T22:39:53.425-0600] {logging_mixin.py:190} INFO - Task start:2024-12-07 04:39:52.184641+00:00 end:2024-12-07 04:39:53.424679+00:00 duration:1.240038
+[2024-12-06T22:39:53.425-0600] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): reddit_extraction> dag:<DAG: reddit_dag> dagrun:<DagRun reddit_dag @ 2024-12-06 00:00:00+00:00: scheduled__2024-12-06T00:00:00+00:00, state:running, queued_at: 2024-12-07 04:39:50.413462+00:00. externally triggered: False>
+[2024-12-06T22:39:53.425-0600] {logging_mixin.py:190} INFO - Failure caused by Cannot save file into a non-existent directory: 'DAGS/dags/data/output'
+[2024-12-06T22:39:53.426-0600] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=reddit_dag, task_id=reddit_extraction, run_id=scheduled__2024-12-06T00:00:00+00:00, execution_date=20241206T000000, start_date=20241207T043952, end_date=20241207T043953
+[2024-12-06T22:39:53.445-0600] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-12-06T22:39:53.446-0600] {standard_task_runner.py:124} ERROR - Failed to execute job 11 for task reddit_extraction (Cannot save file into a non-existent directory: 'DAGS/dags/data/output'; 15009)
+Traceback (most recent call last):
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/pipelines/reddit_pipeline.py", line 18, in reddit_pipeline
+    load_data_to_csv(post_df, file_path)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/dags/etls/reddit_etl.py", line 45, in load_data_to_csv
+    data.to_csv(path, index=False)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 749, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/m9d9v9/PycharmProjects/Airflow-2/Airflow-2/.venv/lib/python3.10/site-packages/pandas/io/common.py", line 616, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'DAGS/dags/data/output'
+[2024-12-06T22:39:53.469-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-12-06T22:39:53.479-0600] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-06T22:39:53.479-0600] {local_task_job_runner.py:245} INFO - ::endgroup::
