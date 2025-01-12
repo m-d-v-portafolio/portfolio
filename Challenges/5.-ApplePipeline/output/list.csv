@@ -1,0 +1,5 @@
+,customer_id,customer_name,location,products
+0,105,Eva,Ohio,"['iPhone', 'AirPods', 'MacBook']"
+1,106,Frank,Nevada,"['iPhone', 'MacBook', 'AirPods']"
+2,107,Grace,Colorado,"['AirPods', 'iPhone']"
+3,108,Henry,Utah,"['iPhone', 'AirPods']"

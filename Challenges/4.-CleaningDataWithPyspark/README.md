@@ -7,12 +7,12 @@ Original project from datalab (Datacamp).
 
 [Datacamp website](https://app.datacamp.com/)
 
-# Prerequisite
+# Prerequisites
 
- 1. Installing Python 3.11.9
+ 1. Installing Python
  2. Installing Java
  3. Installing spark
- 4. Making necesarry configurations in order to run spark on local machine. Alternatively, use databricks community edition
+ 4. Making necessary configurations in order to run spark on local machine. Alternatively, use databricks community edition
 
 
  # Update

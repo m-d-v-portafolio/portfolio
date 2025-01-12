@@ -7,9 +7,9 @@ Original project from datalab (Datacamp).
 
 [Datacamp website](https://app.datacamp.com/)
 
-# Prerequisite
+# Prerequisites
 
- 1. Installing Python 3.12.7
+ 1. Installing Python
  2. Installing Pandas
 
  I have now made my DataCamp portafolio public so by following the below link you should be able to see the web version of the project instead of having to download the notebooks.
