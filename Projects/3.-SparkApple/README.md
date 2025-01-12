@@ -1,4 +1,4 @@
-# This project was developed by following [this youtube video.](https://youtu.be/BlWS4foN9cY?si=qES8vWBxFQljE0A6) All credits to the youtube [channel](https://www.youtube.com/@TheBigDataShow)
+# This project was developed by following [this youtube video.](https://youtu.be/BlWS4foN9cY?si=qES8vWBxFQljE0A6) All credits to the youtube channel [The Big Data Show](https://www.youtube.com/@TheBigDataShow)
 
 The goal of this project is to perform some basic analysis on some invented apple sells.
  1. The first objective is to get customers who have bought airpods after an Iphone
